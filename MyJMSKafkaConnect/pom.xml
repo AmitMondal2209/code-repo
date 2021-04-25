@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>MyJMSKafkaConnect</groupId>
+	<artifactId>MyJMSKafkaConnect</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MyJMSKafkaConnect</name>
+	<description>MyJMSKafkaConnect</description>
+	 <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+     <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central2</id>
+      <name>Central Repository</name>
+      <url>http://maven.icm.edu.pl/artifactory/repo</url>
+    </repository>
+  </repositories>
+	
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.apache.kafka/connect-api -->
+<dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>connect-api</artifactId>
+    <version>2.6.1</version>
+</dependency>
+		 <dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka_2.13</artifactId>
+    <version>2.6.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
+<dependency>
+    <groupId>javax.jms</groupId>
+    <artifactId>javax.jms-api</artifactId>
+    <version>2.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/weblogic/wlthint3client -->
+<dependency>
+    <groupId>weblogic</groupId>
+    <artifactId>wlthint3client</artifactId>
+    <version>10.3.3</version>
+</dependency>
+
+	</dependencies>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
